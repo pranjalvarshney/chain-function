@@ -1,5 +1,6 @@
-export function validateEquation(equation: string) {
-  const validEquationRegex = /^[\d+\-*/^()x\s]*$/;
+export function validateEquation(equation: string): boolean {
+  // Allow only valid characters: x, +, -, *, /, ^, numbers, and whitespace
+  const validEquationRegex = /^[\d+\-*/^x\s]*$/;
 
   return validEquationRegex.test(equation);
 }
