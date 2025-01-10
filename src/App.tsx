@@ -53,7 +53,6 @@ function App() {
                 inputNodeRef={(el: HTMLElement) =>
                   (refs.current.functionOutput[index] = el)
                 }
-                draggable={false}
               />
             );
           })}
